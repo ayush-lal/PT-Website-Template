@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fitzy Fitness - Client Transformations</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/luxbar.css" />
+    <link rel="stylesheet" href="css/bulma-tooltip.min.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900|Open+Sans"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/favicon/favicon.png"
+    />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+    ></script>
+  </head>
+
+  <!-- SMOOTH SCROLL TO SECTION/ELEMENT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+  </script>
+  <body>
+    <!--HERO SECTION
+============================================================================= -->
+    <section class="hero">
+      <!--NAVBAR GOES HERE-->
+      <header id="luxbar" class="luxbar-static">
+        <div id="topnavbar" class="topnav">
+          <a class="topnav-email" href="#"
+            ><i class="fas fa-envelope"></i> shaun_fitzy@hotmail.com</a
+          >
+          |
+          <a class="topnav-ph" href="#"
+            ><i class="fas fa-phone"></i> 0406866985</a
+          >
+
+          <div class="topnav-socials">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+          <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+              <a href="index.html" class="luxbar-brand">FITZY FITNESS</a>
+              <label
+                class="luxbar-hamburger luxbar-hamburger-doublespin"
+                id="luxbar-hamburger"
+                for="luxbar-checkbox"
+              >
+                <span></span>
+              </label>
+            </li>
+            <li class="luxbar-item"><a href="index.html">HOME</a></li>
+            <li class="luxbar-item">
+              <a href="transform.html">TRANSFORMATIONS</a>
+            </li>
+            <li class="luxbar-item"><a href="gallery.html">GALLERY</a></li>
+            <li class="luxbar-item"><a href="#contactme">CONTACT</a></li>
+          </ul>
+        </div>
+      </header>
+    </section>
+
+    <br />
+    <br />
+
+    <!--ABOUT TESTIMONIAL SECTION
+============================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <div class="has-text-centered">
+            <br />
+            <h1 class="title">CLIENT TRANSFORMATIONS</h1>
+          </div>
+          <br />
+
+          <div class="columns box transform-cards">
+            <div class="column">
+              <p>
+                When I first came too see Shaun i was only 55kg I wasn't eating
+                nowhere near enough food and no knowledge about training, in
+                just under one year of strength training and dieting with him I
+                have put on 20kg I have dramatically increased strength gained a
+                serious amount of muscle and am eating almost 4000 calories a
+                day and maintaining body weight while increasing muscle mass and
+                never felt and looked better.
+              </p>
+
+              <footer>&mdash; Warren Atkins</footer>
+            </div>
+
+            <div class="column">
+              <figure class="image is-5by4">
+                <img src="assets/images/transformations/Watkins.JPG" />
+              </figure>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="columns box transform-cards">
+            <div class="column">
+              <p>
+                If you’re looking for accountability, support and someone with
+                outstanding evidence based knowledge in both nutrition and
+                training then Shaun is your guy! He has changed my life, helped
+                me to lose over 40kg and get into the best shape ever, all
+                without restrictive diets and hours of cardio! I can’t recommend
+                him enough, he really is among the best of the best in the
+                industry.
+              </p>
+
+              <footer>&mdash; Rachel Dalton</footer>
+            </div>
+
+            <div class="column">
+              <figure class="image is-5by4">
+                <img src="assets/images/transformations/Rdalton.JPG" />
+              </figure>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="columns box transform-cards">
+            <div class="column">
+              <p>
+                Shaun is an amazing PT/coach very knowledgeable from training to
+                nutrition and his dedication to his clients and their progress
+                is easily seen. He helped me achieve goals I never would have
+                considered nor thought possible and introduced me to a sport I
+                love - powerlifting as well as making it to stage for
+                bodybuilding comps last October something I never would have
+                considered. He ended up being my pt, my coach, councillor and
+                friend.
+              </p>
+
+              <footer>&mdash; Rebecca Kieseker</footer>
+            </div>
+
+            <div class="column">
+              <figure class="image is-5by4">
+                <img src="assets/images/transformations/Rkieseker.jpg" />
+              </figure>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="columns box transform-cards">
+            <div class="column">
+              <p>
+                Simply put - Shaun saved my life. I met him when I was over
+                120kgs and struggling physically and mentally every day. In 18
+                months he inspired, encouraged and pushed me to halve my body
+                weight through weight training and flexible dieting. I am now
+                over 60kgs+ lighter from where I originally started, have
+                competed in a bodybuilding competition and am now leading into a
+                powerlifting competition still under the guidance of Shaun. I am
+                the healthiest and happiest I’ve ever been in my life. Shaun has
+                supported me in every aspect of my health, helping me love life
+                again. If it wasn’t for him, I don’t know if I would have been
+                here for much longer. I owe him my life and will forever call
+                him my coach!
+              </p>
+
+              <footer>&mdash; Louise Alroy</footer>
+            </div>
+
+            <div class="column">
+              <figure class="image is-5by4">
+                <img src="assets/images/transformations/Lalroy.jpg" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION
+============================================================= -->
+    <section id="contactme" class="section">
+      <div class="has-text-centered container">
+        <h1 class="title-topic contactme-title">Contact Shaun Today</h1>
+      </div>
+
+      <div class="container-footer contact-form">
+        <form id="ajax-contact" method="post" action="mailer.php">
+          <div class="field column is-three-fifths is-offset-one-fifth">
+            <input
+              class="input"
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="field column is-three-fifths is-offset-one-fifth">
+            <input
+              class="input"
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="field column is-three-fifths is-offset-one-fifth">
+            <input
+              class="input"
+              type="phone"
+              id="phone"
+              placeholder="Contact Number"
+              name="phone"
+              required
+            />
+          </div>
+
+          <div class="field column is-three-fifths is-offset-one-fifth">
+            <textarea
+              class="textarea"
+              id="message"
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+
+          <div class="field column is-three-fifths is-offset-one-fifth">
+            <button class="is-successf" type="submit">Send</button>
+          </div>
+        </form>
+
+        <div id="form-messages"></div>
+      </div>
+    </section>
+
+    <!--FOOTER SECTION
+      ============================================================================= -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <h1 class="title-footer">
+          FITZY FITNESS
+        </h1>
+
+        <div class="quick-links2">
+          <p>
+            <span class="footer-link"><a href="index.html">Home</a></span>
+            <span><a href="transform.html">Transformation</a></span>
+            <span><a href="gallery.html">Gallery</a></span>
+          </p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/fitzyfitnesspt" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+
+          <a href="https://www.youtube.com/user/Shaunfitzy96" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+
+          <a href="https://www.instagram.com/fitzy_fitness" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a
+            class="tooltip is-tooltip-bottom"
+            data-tooltip="shaun_fitzy@hotmail.com"
+            href="#"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+
+          <a
+            class="tooltip is-tooltip-bottom"
+            data-tooltip="0406866985"
+            href="#"
+          >
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+
+        <br />
+        <div class="disclaimer">
+          <p>
+            &copy; FITZY FITNESS 2018. ALL RIGHTS RESERVED. <br />
+            <!--  CONTACT THE <span>CREATOR.</span> -->
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

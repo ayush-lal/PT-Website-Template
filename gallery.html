@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitzy Fitness - Gallery Showcase</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/luxbar.css">
+    <link rel="stylesheet" href="css/bulma-tooltip.min.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900|Open+Sans" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- SMOOTH SCROLL TO SECTION/ELEMENT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</head>
+
+<body>
+    <!--HERO SECTION
+============================================================================= -->
+    <section class="hero">
+
+        <!--NAVBAR GOES HERE-->
+        <header id="luxbar" class="luxbar-static">
+
+            <div id="topnavbar" class="topnav">
+                <a class="topnav-email" href="#"><i class="fas fa-envelope"></i> shaun_fitzy@hotmail.com</a>
+                |
+                <a class="topnav-ph" href="#"><i class="fas fa-phone"></i> 0406866985</a>
+
+                <div class="topnav-socials">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <a href="index.html" class="luxbar-brand">FITZY FITNESS</a>
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox">
+                            <span></span> </label>
+                    </li>
+                    <li class="luxbar-item"><a href="index.html">HOME</a></li>
+                    <li class="luxbar-item"><a href="transform.html">TRANSFORMATIONS</a></li>
+                    <li class="luxbar-item"><a href="gallery.html">GALLERY</a></li>
+                    <li class="luxbar-item"><a href="#contactme">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--GALLERY SECTION
+============================================================================= -->
+
+<section id="registration" class="section">
+    <h1 class="title-topic has-text-centered">
+        Gallery
+    </h1>
+
+    <br>
+
+    <div class="container contain-gall">
+        <!-- FIRST ROW -->
+        <div class="columns gallery-test">
+            <div class="column galtest">
+                <figure class="image is-256x256">
+                    <a href="assets/images/gallery/FF1.jpg" data-lightbox="GCKC">
+                        <img src="assets/images/gallery/FF1.jpg">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="column galtest">
+                <figure class="image is-256x256">
+                    <a href="assets/images/gallery/FF2.jpg" data-lightbox="GCKC">
+                        <img src="assets/images/gallery/FF2.jpg">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="column galtest">
+                <figure class="image is-256x256">
+                    <a href="assets/images/gallery/FF3.jpg" data-lightbox="GCKC">
+                        <img src="assets/images/gallery/FF3.jpg">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="column galtest">
+                <figure class="image is-256x256">
+                    <a href="assets/images/gallery/FF4.jpg" data-lightbox="GCKC">
+                        <img src="assets/images/gallery/FF4.jpg">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="column galtest">
+                <figure class="image is-256x256">
+                    <a href="assets/images/gallery/FF5.jpg" data-lightbox="GCKC">
+                        <img src="assets/images/gallery/FF5.jpg">
+                    </a>
+                </figure>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+</section>
+
+    <!-- CONTACT FORM SECTION
+============================================================= -->
+<section id="contactme" class="section">
+
+    <div class="has-text-centered container">
+        <h1 class="title-topic contactme-title">Contact Shaun Today</h1>
+      </div>
+
+  <div class="container-footer contact-form">
+
+    <form id="ajax-contact" method="post" action="mailer.php">
+      <div class="field column is-three-fifths is-offset-one-fifth">
+          <input class="input" type="text" id="name" placeholder="Full Name" name="name" required>
+      </div>
+  
+      <div class="field column is-three-fifths is-offset-one-fifth">
+          <input class="input" type="email" id="email" placeholder="Email Address" name="email" required>
+      </div>
+
+      <div class="field column is-three-fifths is-offset-one-fifth">
+            <input class="input" type="phone" id="phone" placeholder="Contact Number" name="phone" required>
+      </div>
+  
+      <div class="field column is-three-fifths is-offset-one-fifth">
+          <textarea class="textarea" id="message" placeholder="Message" name="message" required></textarea>
+      </div>
+  
+      <div class="field column is-three-fifths is-offset-one-fifth">
+          <button class="is-successf" type="submit">Send</button>
+      </div>
+  </form>
+
+  <div id="form-messages"></div>
+
+    </div>
+</section> 
+
+    <!--FOOTER SECTION
+      ============================================================================= -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <h1 class="title-footer">
+                FITZY FITNESS
+            </h1>
+
+            <div class="quick-links2">
+                <P>
+                    <span class="footer-link"><a href="index.html">Home</a></span>
+                    <span><a href="transform.html">Transformation</a></span>
+                    <span><a href="gallery.html">Gallery</a></span>
+                    <!--    <span><a href= "#contactme">Contact</a></span> -->
+                </P>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/fitzyfitnesspt" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+
+                <a href="https://www.youtube.com/user/Shaunfitzy96" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/fitzy_fitness" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a class="tooltip is-tooltip-bottom" data-tooltip="shaun_fitzy@hotmail.com" href="#">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a class="tooltip is-tooltip-bottom" data-tooltip="0406866985" href="#">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+            </div>
+
+            <br>
+            <div class="disclaimer">
+                <p>
+                    &copy; FITZY FITNESS 2018. ALL RIGHTS RESERVED. <br>
+                    <!--  CONTACT THE <span>CREATOR.</span> -->
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
